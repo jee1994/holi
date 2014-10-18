@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.example.fragment.MainActivity" >
+
+
+<FrameLayout
+    android:layout_width ="match_parent"
+	android:layout_height = "wrap_content"
+    android:layout_weight="1"> 
+	 <ImageView
+	     android:id="@+id/image1"
+	     android:layout_width="match_parent"
+	     android:layout_height="match_parent"
+	     android:src="@drawable/cloudatlas"
+	     android:visibility="visible"
+	     />
+	 <ImageView
+	     android:id="@+id/image2"
+	     android:layout_width="match_parent"
+	     android:layout_height="match_parent"
+	     android:src="@drawable/django"
+	     android:visibility="invisible"
+	     />
+	 <ImageView
+	     android:id="@+id/image3"
+	     android:layout_width="match_parent"
+	     android:layout_height="match_parent"
+	     android:src="@drawable/greatg"
+	     android:visibility="invisible"
+	     />
+	 <ImageView
+	     android:id="@+id/image4"
+	     android:layout_width="match_parent"
+	     android:layout_height="match_parent"
+	     android:src="@drawable/pirate"
+	     android:visibility="invisible"
+	     />
+	</FrameLayout>
+<LinearLayout
+    android:orientation="horizontal"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_weight = "0.2">
+    
+      <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+
+        android:text="img1" />
+        
+      <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+	
+
+        android:text="img2" />
+          
+      <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_weight="1"
+
+        android:text="img3" />
+            
+      <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+		
+        android:layout_height="wrap_content"
+		android:layout_weight="1"
+        android:text="img4" />
+    
+    
+</LinearLayout>
+<LinearLayout
+    android:orientation="horizontal"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_weight = "0.2">
+
+    <Button
+        android:id="@+id/start_frag"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="start frag"
+        />
+	
+</LinearLayout>    
+  
+  <fragment android:name="com.example.fragment.ArticleFragment"
+              android:id="@+id/article_fragment"
+              android:layout_weight="2"
+              android:layout_width="0dp"
+              android:layout_height="0dp" />
+
+
+
+
+</LinearLayout>
